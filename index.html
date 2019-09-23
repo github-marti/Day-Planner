@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- ref to bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- ref to my stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- ref to font awesome -->
     <script src="https://kit.fontawesome.com/4a3eda80d3.js" crossorigin="anonymous"></script>
+    
+    <!-- ref to jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- moment.js -->
+    <script src="moment.js"></script>
+    <script>
+        moment().format();
+    </script>
+
     <title>Day Planner</title>
 </head>
 <body>
@@ -16,110 +31,111 @@
             <h1>Work Day Scheduler</h1>
             <p class="mb-1">A simple calendar application for scheduling out your day!</p>
             <p>Type your tasks into the calendar below and then press the save icon to store your to-do items.</p>
+            <h4 id="current-day" class="date"></h4>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-2 col-lg-1 hour">
+            <div class="col-2 col-md-1 hour">
                 9 AM
             </div>
-            <div class="col-8 col-lg-10 todo">
-                <textarea></textarea>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="9"></textarea>
             </div>
-            <div class="col-2 col-lg-1 save">
-                <span class="fas fa-save fa-2x"></span>
+            <div class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
             </div>
         </div>
         <div class="row">
-            <div class="col-2 col-lg-1 hour">
+            <div class="col-2 col-md-1 hour">
                 10 AM
             </div>
-            <div class="col-8 col-lg-10 todo">
-                <textarea></textarea>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="10"></textarea>
             </div>
-            <div class="col-2 col-lg-1 save">
-                <span class="fas fa-save fa-2x"></span>
+            <div class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
             </div>
         </div>
         <div class="row">
-            <div class="col-2 col-lg-1 hour">
+            <div class="col-2 col-md-1 hour">
                 11 AM
             </div>
-            <div class="col-8 col-lg-10 todo">
-                <textarea></textarea>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="11"></textarea>
             </div>
-            <div class="col-2 col-lg-1 save">
-                <span class="fas fa-save fa-2x"></span>
+            <div class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
             </div>
         </div>
         <div class="row">
-            <div class="col-2 col-lg-1 hour">
+            <div class="col-2 col-md-1 hour">
                 12 PM
             </div>
-            <div class="col-8 col-lg-10 todo">
-                <textarea></textarea>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="12"></textarea>
             </div>
-            <div class="col-2 col-lg-1 save">
-                <span class="fas fa-save fa-2x"></span>
+            <div class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
             </div>
         </div>
         <div class="row">
-            <div class="col-2 col-lg-1 hour">
+            <div class="col-2 col-md-1 hour">
                 1 PM
             </div>
-            <div class="col-8 col-lg-10 todo">
-                <textarea></textarea>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="13"></textarea>
             </div>
-            <div class="col-2 col-lg-1 save">
-                <span class="fas fa-save fa-2x"></span>
+            <div class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
             </div>
         </div>
         <div class="row">
-            <div class="col-2 col-lg-1 hour">
+            <div class="col-2 col-md-1 hour">
                 2 PM
             </div>
-            <div class="col-8 col-lg-10 todo">
-                <textarea></textarea>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="14"></textarea>
             </div>
-            <div class="col-2 col-lg-1 save">
-                <span class="fas fa-save fa-2x"></span>
+            <div class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
             </div>
         </div>
         <div class="row">
-            <div class="col-2 col-lg-1 hour">
+            <div class="col-2 col-md-1 hour">
                 3 PM
             </div>
-            <div class="col-8 col-lg-10 todo">
-                <textarea></textarea>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="15"></textarea>
             </div>
-            <div class="col-2 col-lg-1 save">
-                <span class="fas fa-save fa-2x"></span>
+            <div class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
             </div>
         </div>
         <div class="row">
-            <div class="col-2 col-lg-1 hour">
+            <div class="col-2 col-md-1 hour">
                 4 PM
             </div>
-            <div class="col-8 col-lg-10 todo">
-                <textarea></textarea>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="16"></textarea>
             </div>
-            <div class="col-2 col-lg-1 save">
-                <span class="fas fa-save fa-2x"></span>
+            <div class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
             </div>
         </div>
         <div class="row">
-            <div class="col-2 col-lg-1 hour">
+            <div class="col-2 col-md-1 hour">
                 5 PM
             </div>
-            <div class="col-8 col-lg-10 todo">
-                <textarea></textarea>
+            <div class="col-8 col-md-10 todo">
+                <textarea id="17"></textarea>
             </div>
-            <div class="col-2 col-lg-1 save">
-                <span class="fas fa-save fa-2x"></span>
+            <div class="col-2 col-md-1 save">
+                <span class="fas fa-save"></span>
             </div>
         </div>
+        <button id="clear-button"><h3>Clear Schedule</h3></button>
     </div>
-    <script type="javascript/text" src="moment.js"></script>
-    <script type="javascript/text" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
