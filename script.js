@@ -1,9 +1,10 @@
 let today = moment().format('MMMM Do YYYY');
+let dayOfWeek = moment().format('dddd');
 let thisHour = moment().hour();
 
 let todoArray = [];
 
-$('#current-day').text(today);
+$('#current-day').text(dayOfWeek + ' ' + today);
 
 for (i = 9; i < 18; i++) {
     if (parseInt($('#' + i).attr('id')) < thisHour) {
