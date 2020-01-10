@@ -10,7 +10,7 @@ for (i = 9; i < 18; i++) {
     if (parseInt($('#' + i).attr('id')) < thisHour) {
         $('#' + i).attr('style', 'background-color: #dddddd');
     } else if (parseInt($('#' + i).attr('id')) > thisHour) {
-        $('#' + i).attr('style', 'background-color: #ffd4da');
+        $('#' + i).attr('style', 'background-color: #ffffff');
     } else {
         $('#' + i).attr('style', 'background-color: #fff78a')
     }
