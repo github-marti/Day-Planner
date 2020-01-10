@@ -65,7 +65,6 @@ textarea {
 .save {
     color: white;
     text-align: center;
-    border-radius: 0 10px 10px 0;
     background: #800e0e;
     line-height: 100px;
     cursor: pointer;
@@ -86,7 +85,6 @@ button {
     width: auto;
     padding: 10px 15px;
     margin: 20px 0;
-    border-radius: 5px;
 }
 
 @media screen and (max-width: 580px) {
