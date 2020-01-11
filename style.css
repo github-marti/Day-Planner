@@ -11,6 +11,10 @@ body {
     margin: 20px 0;
 }
 
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
 h3 {
     margin-bottom: 0;
 }
@@ -19,6 +23,7 @@ h3 {
     display: inline-block;
     color: white;
     background: #800e0e;
+    font-size: 2em;
     width: auto;
     padding: 10px 15px;
     margin: 10px 0;
