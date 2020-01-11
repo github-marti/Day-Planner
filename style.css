@@ -60,6 +60,7 @@ textarea {
     padding: 5px;
     background: #ffffff;
     color: #3d3737;
+    border-left: 1px solid #3d3737;
 }
 
 .todo {
